@@ -1,0 +1,13 @@
+grow_version: ">=0.0.60"
+
+localization:
+  default_locale: en_CA
+
+static_dirs:
+- static_dir: /source/images/
+  serve_at: /static/images/
+- static_dir: /dist/
+  serve_at: /static/
+  
+preprocessors:
+- kind: gulp

@@ -1,0 +1,8 @@
+path: /{base}/
+view: /views/base.html
+
+sections:
+
+
+localization:
+  path: /intl/{locale}/{base}/

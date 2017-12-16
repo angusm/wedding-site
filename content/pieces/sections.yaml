@@ -1,0 +1,13 @@
+sections:
+  - id: hero
+    content: !g.yaml /content/pieces/hero.yaml
+  - id: date
+    content: !g.yaml /content/pieces/date.yaml
+  - id: location
+    content: !g.yaml /content/pieces/location.yaml
+  - id: lodging
+    content: !g.yaml /content/pieces/lodging.yaml
+  - id: shuttle
+    content: !g.yaml /content/pieces/shuttle.yaml
+  - id: rsvp
+    content: !g.yaml /content/pieces/rsvp.yaml
