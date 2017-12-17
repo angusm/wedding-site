@@ -2,9 +2,9 @@ html_id: date
 header: When
 content:
   - header: Ceremony
-    body: At 3 o'clock
+    body: At 2:30
   - header: Cocktails
-    body: At 5 o'clock
+    body: At 5:30
   - header: Dinner
     body: At 6'oclock
 
