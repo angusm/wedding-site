@@ -1,0 +1,29 @@
+@import _config.sass
+
+.header
+  align-items: center
+  box-shadow: 1px 1px rgba(#000, 0.6)
+  display: flex
+  left: 0
+  overflow: hidden
+  position: fixed
+  top: 0
+  width: 100%
+  +bg-color-black
+
+.header__container
+  align-items: center
+  display: flex
+  height: $header-container-padding
+  min-width: calc(100% - #{$header-container-padding * 2})
+  padding: $header-container-padding
+  position: relative
+  white-space: nowrap
+
+.header__item
+  display: inline
+  flex-grow: 0
+  margin: 10px
+
+  &:first-child
+    flex-grow: 1

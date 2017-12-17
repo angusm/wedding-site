@@ -1,0 +1,30 @@
+@import _config.sass
+
+main
+  margin: $header-container-padding * 3 auto 0
+  max-width: 1080px
+
+.section
+  align-items: center
+  display: flex
+  flex-direction: column
+  justify-content: center
+  padding: 50px
+
+  &--hero
+    +bg-color-light-grey
+
+  &--date
+    +bg-color-blue
+
+  &--location
+    +bg-color-blue-medium
+
+  &--lodging
+    +bg-color-blue-dark
+
+  &--shuttle
+    +bg-color-red-dark
+
+  &--rsvp
+    +bg-color-red-medium

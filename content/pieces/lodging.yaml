@@ -1,5 +1,6 @@
+html_id: lodging
 header: Lodging
-copy:
+content:
   - header: Southey Hotel
     body: ...
   - header: Comfort Suites

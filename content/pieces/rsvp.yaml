@@ -1,5 +1,6 @@
+html_id: rsvp
 header: RSVP
-copy:
+content:
   - body: >
       Line one
       Line two

@@ -1,0 +1,61 @@
+$font-color-light: #C6C6C6
+$font-color-dark: #2D2D2D
+
+$bg-color-red-dark: #530B11
+$bg-color-red-light: #B82A34
+$bg-color-red-medium: #7A181F
+$bg-color-blue: #3F4E73
+$bg-color-blue-light: #818BA4
+$bg-color-blue-medium: #223054
+$bg-color-blue-dark: #0D1832
+$bg-color-white: #EEEEEE
+$bg-color-light-grey: #C6C6C6
+$bg-color-grey: #919191
+$bg-color-dark-grey: #595959
+$bg-color-black: #2D2D2D
+
+$bg-font-colors: ($bg-color-red-dark: $font-color-light, $bg-color-red-light: $font-color-dark, $bg-color-red-medium: $font-color-light, $bg-color-blue: $font-color-light, $bg-color-blue-light: $font-color-dark, $bg-color-blue-medium: $font-color-light, $bg-color-blue-dark: $font-color-light, $bg-color-white: $font-color-dark, $bg-color-light-grey: $font-color-dark, $bg-color-grey: $font-color-dark, $bg-color-dark-grey: $font-color-dark, $bg-color-black: $font-color-light)
+
+=bg-color($bg-color)
+  background: $bg-color
+  color: map-get($bg-font-colors, $bg-color)
+
+  a,
+  a:visited
+    color: map-get($bg-font-colors, $bg-color)
+
+=bg-color-red-dark
+  +bg-color($bg-color-red-dark)
+
+=bg-color-red-light
+  +bg-color($bg-color-red-light)
+
+=bg-color-red-medium
+  +bg-color($bg-color-red-medium)
+
+=bg-color-blue
+  +bg-color($bg-color-blue)
+
+=bg-color-blue-light
+  +bg-color($bg-color-blue-light)
+
+=bg-color-blue-medium
+  +bg-color($bg-color-blue-medium)
+
+=bg-color-blue-dark
+  +bg-color($bg-color-blue-dark)
+
+=bg-color-white
+  +bg-color($bg-color-white)
+
+=bg-color-light-grey
+  +bg-color($bg-color-light-grey)
+
+=bg-color-grey
+  +bg-color($bg-color-grey)
+
+=bg-color-dark-grey
+  +bg-color($bg-color-dark-grey)
+
+=bg-color-black
+  +bg-color($bg-color-black)
