@@ -1,6 +1,7 @@
 html_id: location
-header: In Jackie's Yard
+header: Where
 content:
+  - header: Jackie's Yard
   - header: Directions from Southey
     body: ...
   - header: Directions from Regina

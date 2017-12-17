@@ -1,0 +1,15 @@
+@import config
+
+.section.section--rsvp
+  .section__header
+    border: 1px solid
+    cursor: pointer
+    padding: 50px
+    box-shadow: 8px 8px $shadow-color
+    transform: translate(-5px, -5px)
+    transition: transform 200ms, box-shadow 200ms, background 200ms
+
+    &:hover
+      box-shadow: 3px 3px $shadow-color
+      transform: translate(-3px, -3px)
+      +bg-color-red-medium

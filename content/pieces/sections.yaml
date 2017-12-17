@@ -3,5 +3,5 @@ sections:
   - !g.yaml /content/pieces/date.yaml
   - !g.yaml /content/pieces/location.yaml
   - !g.yaml /content/pieces/lodging.yaml
-  - !g.yaml /content/pieces/shuttle.yaml
+#  - !g.yaml /content/pieces/shuttle.yaml
   - !g.yaml /content/pieces/rsvp.yaml

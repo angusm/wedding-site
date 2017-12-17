@@ -13,11 +13,14 @@ $bg-color-light-grey: #C6C6C6
 $bg-color-grey: #919191
 $bg-color-dark-grey: #595959
 $bg-color-black: #2D2D2D
+$bg-color-deep-black: #111111
 
-$bg-font-colors: ($bg-color-red-dark: $font-color-light, $bg-color-red-light: $font-color-dark, $bg-color-red-medium: $font-color-light, $bg-color-blue: $font-color-light, $bg-color-blue-light: $font-color-dark, $bg-color-blue-medium: $font-color-light, $bg-color-blue-dark: $font-color-light, $bg-color-white: $font-color-dark, $bg-color-light-grey: $font-color-dark, $bg-color-grey: $font-color-dark, $bg-color-dark-grey: $font-color-dark, $bg-color-black: $font-color-light)
+$shadow-color: rgba(#000, 0.5)
+
+$bg-font-colors: ($bg-color-red-dark: $font-color-light, $bg-color-red-light: $font-color-dark, $bg-color-red-medium: $font-color-light, $bg-color-blue: $font-color-light, $bg-color-blue-light: $font-color-dark, $bg-color-blue-medium: $font-color-light, $bg-color-blue-dark: $font-color-light, $bg-color-white: $font-color-dark, $bg-color-light-grey: $font-color-dark, $bg-color-grey: $font-color-dark, $bg-color-dark-grey: $font-color-dark, $bg-color-black: $font-color-light, $bg-color-deep-black: $font-color-light)
 
 =bg-color($bg-color)
-  background: $bg-color
+  background-color: $bg-color
   color: map-get($bg-font-colors, $bg-color)
 
   a,
@@ -59,3 +62,6 @@ $bg-font-colors: ($bg-color-red-dark: $font-color-light, $bg-color-red-light: $f
 
 =bg-color-black
   +bg-color($bg-color-black)
+
+=bg-color-deep-black
+  +bg-color($bg-color-deep-black)

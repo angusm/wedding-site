@@ -1,30 +1,32 @@
 @import _config.sass
 
 main
+  height: 100%
   margin: $header-container-padding * 3 auto 0
-  max-width: 1080px
 
 .section
   align-items: center
   display: flex
   flex-direction: column
+  height: calc(100% - 100px)
   justify-content: center
   padding: 50px
+  +fadeUpIn
+
+.deep-link-by-scroll
+  transition: background $scroll-transition-time, color $scroll-transition-time
 
   &--hero
-    +bg-color-light-grey
+    +bg-color-deep-black
 
   &--date
-    +bg-color-blue
+    +bg-color-blue-dark
 
   &--location
     +bg-color-blue-medium
 
   &--lodging
-    +bg-color-blue-dark
-
-  &--shuttle
-    +bg-color-red-dark
+    +bg-color-red-medium
 
   &--rsvp
-    +bg-color-red-medium
+    +bg-color-red-dark

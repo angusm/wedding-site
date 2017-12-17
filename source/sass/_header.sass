@@ -1,15 +1,37 @@
-@import _config.sass
+@import config
+
+.deep-link-by-scroll--hero .header
+  box-shadow: none
+
+.deep-link-by-scroll
+  &--date,
+  &--location,
+  &--lodging,
+  &--shuttle,
+  &--rsvp
+    .header
+      +bg-color-black
+
+  &--date .header__item--date,
+  &--location .header__item--location,
+  &--lodging .header__item--lodging,
+  &--shuttle .header__item--shuttle,
+  &--rsvp .header__item--rsvp
+    border-bottom: 1px solid
 
 .header
   align-items: center
   box-shadow: 1px 1px rgba(#000, 0.6)
   display: flex
+  font-size: 16px
   left: 0
   overflow: hidden
   position: fixed
   top: 0
+  transition: background $scroll-transition-time, box-shadow $scroll-transition-time
   width: 100%
-  +bg-color-black
+  +bg-color-deep-black
+  z-index: 1
 
 .header__container
   align-items: center
@@ -19,11 +41,17 @@
   padding: $header-container-padding
   position: relative
   white-space: nowrap
+  +fadeUpIn
 
 .header__item
   display: inline
   flex-grow: 0
   margin: 10px
+  text-transform: uppercase
 
   &:first-child
     flex-grow: 1
+    font-size: 22px
+
+    a:hover
+      border: none
