@@ -4,8 +4,12 @@ localization:
   default_locale: en_CA
 
 static_dirs:
+- static_dir: /source/favicon/
+  serve_at: /static/favicon/
 - static_dir: /source/images/
   serve_at: /static/images/
+- static_dir: /source/fonts/
+  serve_at: /static/fonts/
 - static_dir: /dist/
   serve_at: /static/
   

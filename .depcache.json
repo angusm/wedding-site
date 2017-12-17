@@ -1,13 +1,6 @@
 {
   "/content/pages/index.yaml": [
-    "/content/pieces/sections.yaml"
-  ],
-  "/content/pieces/sections.yaml": [
-    "/content/pieces/date.yaml",
-    "/content/pieces/hero.yaml",
-    "/content/pieces/location.yaml",
-    "/content/pieces/lodging.yaml",
-    "/content/pieces/rsvp.yaml",
-    "/content/pieces/shuttle.yaml"
+    "/content/pieces/sections.yaml",
+    "/views/favicon.html"
   ]
 }

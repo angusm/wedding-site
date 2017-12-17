@@ -1,4 +1,5 @@
-@import _config.sass
+@import config
+@import config-fonts
 
 main
   height: 100%
@@ -7,10 +8,40 @@ main
   align-items: center
   display: flex
   flex-direction: column
-  height: calc(100% - 100px)
   justify-content: center
-  padding: 50px
+  height: calc(100% - #{($header-container-padding * 3) + ($section-padding * 2)})
+  margin-top: -$header-container-padding * 3
+  min-height: calc(100% - #{($header-container-padding * 3) + ($section-padding * 2)})
+  padding: #{$header-container-padding * 3 + $section-padding} $section-padding $section-padding
+  position: relative
   +fadeUpIn
+
+.section__header
+  font-size: 50px
+  letter-spacing: 12px
+  text-align: center
+  text-transform: uppercase
+
+.section__content
+  text-align: center
+
+  &__header
+    font-size: 26px
+    letter-spacing: 6px
+    text-transform: lowercase
+    +serif
+
+  &__body
+    font-size: 18px
+    letter-spacing: 1px
+
+.section__background
+  bottom: $section-padding
+  left: $section-padding
+  pointer-events: none
+  position: absolute
+  right: $section-padding
+  top: $section-padding
 
 .deep-link-by-scroll
   transition: background $scroll-transition-time, color $scroll-transition-time

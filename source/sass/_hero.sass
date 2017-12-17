@@ -13,11 +13,16 @@
     transform: translate3d(0, 0, 0)
 
 .section.section--hero
-  background-image: url(/static/images/wedding-logo.png)
-  background-position: center center
-  background-repeat: no-repeat
-  padding: #{$header-container-padding * 3 + 50px} 50px 50px
-  height: calc(100% - #{($header-container-padding * 3) + 100px})
+  margin-top: 0
+  position: relative
+
+  .section__background
+    background-image: url(/static/images/wedding-logo.png)
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: contain
+    margin: auto
+    max-width: 669px
 
   .section__header,
   .section__content
@@ -30,10 +35,18 @@
   text-align: center
   transition: opacity 500ms
   width: 100%
+  z-index: 99
 
   &__arrow
     animation: bounceAnimation 6s infinite
     font-size: 40px
+
+    a
+      pointer-events: all
+
+      &,
+      &:hover
+        border: none
 
 .deep-link-by-scroll
   &--hero .hero-scroll-cta

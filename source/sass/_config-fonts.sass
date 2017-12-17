@@ -1,0 +1,40 @@
+@import config
+
+@font-face
+  font-family: 'scribble'
+  src: url('/static/fonts/scribble.eot')
+  src: url('/static/fonts/scribble.eot?#iefix') format('embedded-opentype'),
+  url('/static/fonts/scribble.woff2') format('woff2'),
+  url('/static/fonts/scribble.woff') format('woff'),
+  url('/static/fonts/scribble.ttf') format('truetype')
+  font-weight: normal
+  font-style: italic
+
+@font-face
+  font-family: 'olde'
+  src: url('/static/fonts/olde-Regular.eot')
+  src: url('/static/fonts/olde-Regular.eot?#iefix') format('embedded-opentype'),
+  url('/static/fonts/olde-Regular.woff2') format('woff2'),
+  url('/static/fonts/olde-Regular.woff') format('woff'),
+  url('/static/fonts/olde-Regular.ttf') format('truetype')
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'serif'
+  src: url('/static/fonts/serif.eot')
+  src: url('/static/fonts/serif.eot?#iefix') format('embedded-opentype'),
+  url('/static/fonts/serif.woff2') format('woff2'),
+  url('/static/fonts/serif.woff') format('woff'),
+  url('/static/fonts/serif.ttf') format('truetype')
+  font-weight: normal
+  font-style: normal
+
+=olde
+  font-family: 'olde', $font-family
+
+=scribble
+  font-family: 'scribble', $font-family
+
+=serif
+  font-family: 'serif', Georgia, Times, serif

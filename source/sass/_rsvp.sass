@@ -2,14 +2,33 @@
 
 .section.section--rsvp
   .section__header
+    display: none
+
+  .section__content
+    width: 100%
+
+  .section__content__header
     border: 1px solid
-    cursor: pointer
-    padding: 50px 150px
     box-shadow: 8px 8px $shadow-color
+    cursor: pointer
+    display: inline-block
+    font-size: 50px
+    padding: 18% 32%
     transform: translate(-5px, -5px)
     transition: transform 100ms, box-shadow 100ms, background 100ms
+    +scribble
 
     &:hover
       box-shadow: 3px 3px $shadow-color
       transform: translate(-3px, -3px)
       +bg-color-red-medium
+
+    a
+      align-items: center
+      display: flex
+      height: 100%
+      justify-content: center
+      left: 0
+      position: absolute
+      top: 0
+      width: 100%

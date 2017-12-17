@@ -1,4 +1,5 @@
 html_id: rsvp
 header: RSVP
 content:
-  - body: rsvp@maczoski.com
+  - header: <a href="mailto:rsvp@maczoski.com">RSVP</a>
+    body: <a href="mailto:rsvp@maczoski.com">rsvp@maczoski.com</a>

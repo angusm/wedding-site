@@ -34,4 +34,5 @@ gulp.task('css', () => {
     .pipe(gulp.dest('./dist/css'));
 });
 
+gulp.task('build', ['css', 'js']);
 gulp.task('default', ['css', 'js']);

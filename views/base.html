@@ -6,6 +6,7 @@
   <title>{{doc.title}}</title>
   <link rel="stylesheet" href="/static/css/main.min.css">
   <link href="//fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+  {% include "/views/favicon.html" %}
 </head>
 <body>
   <header class="header">
@@ -20,20 +21,23 @@
     </div>
   </header>
   <div class="hero-scroll-cta">
-    <div class="hero-scroll-cta__arrow">▼</div>
+    <div class="hero-scroll-cta__arrow">
+      <a href="#{{doc.sections[1].html_id}}">▼</a>
+    </div>
   </div>
   <main>
     {% for section in doc.sections %}
       <section id="{{section.html_id}}"
                class="section section--{{section.html_id}}">
+        <div class="section__background"></div>
         {% if section.header %}
         <h1 class="section__header">{{section.header}}</h1>
         {% endif %}
         {% if section.content %}
         {% for content in section.content %}
         <div class="section__content">
-          <h2>{{content.header}}</h2>
-          <p>{{content.body}}</p>
+          <h2 class="section__content__header">{{content.header|safe}}</h2>
+          <p class="section__content__body">{{content.body|safe}}</p>
         </div>
         {% endfor %}
         {% endif %}
