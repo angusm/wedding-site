@@ -1,7 +1,4 @@
 html_id: rsvp
 header: RSVP
 content:
-  - body: >
-      Line one
-      Line two
-      Line three
+  - body: rsvp@maczoski.com
