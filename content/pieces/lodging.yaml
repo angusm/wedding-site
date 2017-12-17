@@ -1,7 +1,23 @@
 html_id: lodging
 header: Lodging
 content:
-  - header: Southey Hotel
-    body: ...
-  - header: Comfort Suites
-    body: ...
+  - header: Camping  
+    body: >
+      Bring a tent or trailer, there is room in Jackie's yard 
+      <br>
+      If you plan on camping please let us know in your RSVP
+  - header: Sangha Inn  
+    body: >
+      89 Assiniboia Ave, Southey
+      <br>
+      Book a room under MacZoski Wedding
+      <br>
+      639-999-8377
+  - header: Comfort Suites Regina
+    body: >
+      4300 Diefenbaker Dr, Regina
+      <br>
+      Book a room under MacZoski wedding
+      <br>
+      306-949-4000
+
