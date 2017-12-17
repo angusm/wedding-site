@@ -7,4 +7,9 @@ content:
     body: At 5:30
   - header: Dinner
     body: At 6'oclock
+  - header: Dance
+    body: >
+      Following supper
+      <br>
+      Open Bar - leave your cash at home
 
