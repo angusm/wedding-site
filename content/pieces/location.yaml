@@ -1,36 +1,25 @@
 html_id: location
 header: Where
 content:
-  - header: Jackie's Yard
+  - super_header: Jackie's Yard
   - header: Directions from Regina
     body: >
-      Go North on Highway 6 for 37km. 
-      <br>
-      You will go down the valley hill.
-      <br>
-      Turn left after the Earl Grey 23 sign.
-      <br>
-      There will be a lamp post and wedding signs.
-      <br>
-      Jackie's is the first house at the top of the hill.
-      <br>
-      It’s on the right with a long driveway.
-      <br>
-      Watch for signs.
+      <p>Go North on Highway 6 for 37km.
+      <p>You will go down the valley hill.
+      <p>Turn left after the Earl Grey 23 sign.
+      <p>There will be a lamp post and wedding signs.
+      <p>Jackie's is the first house at the top of the hill.
+      <p>It’s on the right with a long driveway.
+      <p>Watch for signs.
   - header: Directions from Southey
     body: >
-      Head South on Highway 6.
-      <br>
-      Take your first right once you’re going down the hill.
-      <br>
-      There will be a lamp post and wedding signs.
-      <br>
-      Jackie's is the first house at the top of the hill.
-      <br>
-      It’s on the right with a long driveway.
-      <br>
-      Watch for signs.
+      <p>Head South on Highway 6.
+      <p>Take your first right once you’re going down the hill.
+      <p>There will be a lamp post and wedding signs.
+      <p>Jackie's is the first house at the top of the hill.
+      <p>It’s on the right with a long driveway.
+      <p>Watch for signs.
   - header: Directions via Google Maps
     body: "Enter the Longitude and Latitude: 50.824, -104.569"
   - header: Parking
-    body: Watch for signs.
+    body: <p>Watch for signs.

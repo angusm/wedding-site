@@ -3,6 +3,7 @@
 <html lang="{{doc.locale}}" dir="{{doc.locale.direction}}">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
   <title>{{doc.title}}</title>
   <link rel="stylesheet" href="/static/css/main.min.css">
   <link href="//fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
@@ -36,8 +37,17 @@
         {% if section.content %}
         {% for content in section.content %}
         <div class="section__content">
-          <h2 class="section__content__header">{{content.header|safe}}</h2>
-          <p class="section__content__body">{{content.body|safe}}</p>
+          {% if content.super_header %}
+          <h2 class="section__content__super-header">
+            {{content.super_header|safe}}
+          </h2>
+          {% endif %}
+          {% if content.header %}
+          <h3 class="section__content__header">{{content.header|safe}}</h3>
+          {% endif %}
+          {% if content.body %}
+          <div class="section__content__body">{{content.body|safe}}</div>
+          {% endif %}
         </div>
         {% endfor %}
         {% endif %}

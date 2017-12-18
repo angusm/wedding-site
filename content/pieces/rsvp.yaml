@@ -2,8 +2,7 @@ html_id: rsvp
 header: RSVP
 content:
   - header: <a href="mailto:rsvp@maczoski.com">RSVP</a>
-    body: <a href="mailto:rsvp@maczoski.com">rsvp@maczoski.com</a>
+    body:
   - body: >
-      If you plan on camping please let us know if you will have a tent or trailer.
-      <br>
-      In your email confirm how many people will be attending and who you all are.
+      <p>Please RSVP by sending an e-mail to <a href="mailto:rsvp@maczoski.com">rsvp@maczoski.com</a> with a complete list of your names.
+      <p>Please let us know if you will be camping, and if so whether you have a tent or trailer.

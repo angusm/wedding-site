@@ -1,4 +1,5 @@
 @import config
+@import config-bp
 
 @font-face
   font-family: 'scribble'
@@ -30,6 +31,21 @@
   font-weight: normal
   font-style: normal
 
+$font-size-l: 48px
+$font-size-xl: 58px
+$font-size-mobile-ratio: (3/4)
+
+=font-size-w-bp($fs)
+  font-size: $fs * $font-size-mobile-ratio
+  +md
+    font-size: $fs
+
+=font-size-l
+  +font-size-w-bp($font-size-l)
+
+=font-size-xl
+  +font-size-w-bp($font-size-xl)
+
 =olde
   font-family: 'olde', $font-family
 
@@ -38,3 +54,10 @@
 
 =serif
   font-family: 'serif', Georgia, Times, serif
+
+=letter-spacing($ls)
+  letter-spacing: $ls * $font-size-mobile-ratio
+  transform: translateX(#{$ls * $font-size-mobile-ratio / 2})
+  +md
+    letter-spacing: $ls
+    transform: translateX(#{$ls / 2})

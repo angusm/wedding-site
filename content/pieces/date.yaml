@@ -1,10 +1,11 @@
 html_id: date
 header: When
 content:
+  - super_header: August <span class="olde">25<span class="superscript">th</span></span> 2017
   - header: Ceremony
-    body: At 2:30
+    body: <p>Half-past Two
   - header: Cocktails
-    body: At 5:30
+    body: <p>Half-past Five
   - header: Dinner
-    body: At 6'oclock
+    body: <p>Six O'Clock
 

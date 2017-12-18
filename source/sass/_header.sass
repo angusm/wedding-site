@@ -1,4 +1,5 @@
 @import config
+@import config-bp
 @import config-fonts
 
 .deep-link-by-scroll--hero .header
@@ -25,7 +26,6 @@
   align-items: center
   box-shadow: 1px 1px rgba(#000, 0.6)
   display: flex
-  font-size: 16px
   left: 0
   overflow: hidden
   position: fixed
@@ -48,14 +48,21 @@
 .header__item
   display: inline
   flex-grow: 0
-  letter-spacing: 3px
-  margin: 10px
+  font-size: 12px
+  margin: 5px
   text-transform: uppercase
+
+  +md
+    font-size: 16px
+    +letter-spacing(3px)
+    margin: 10px
 
   &:first-child
     flex-grow: 1
-    font-size: 18px
     +serif
+
+    +md
+      font-size: 18px
 
     a:hover
       border: none

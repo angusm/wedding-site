@@ -1,4 +1,5 @@
-@import _config.sass
+@import config
+@import config-fonts
 
 @keyframes bounceAnimation
   0%
@@ -13,6 +14,7 @@
     transform: translate3d(0, 0, 0)
 
 .section.section--hero
+  min-height: calc(100% - #{($header-container-padding * 3) + ($section-padding * 2)})
   margin-top: 0
   position: relative
 
@@ -39,7 +41,7 @@
 
   &__arrow
     animation: bounceAnimation 6s infinite
-    font-size: 40px
+    +font-size-w-bp(40px)
 
     a
       pointer-events: all

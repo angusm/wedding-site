@@ -1,4 +1,5 @@
 @import config
+@import config-fonts
 
 .section.section--rsvp
   .section__header
@@ -12,8 +13,9 @@
     box-shadow: 8px 8px $shadow-color
     cursor: pointer
     display: inline-block
-    font-size: 50px
-    padding: 18% 32%
+    +font-size-l
+    max-width: 90%
+    padding: calc(45px + 12%) calc(80px + 21.3%)
     transform: translate(-5px, -5px)
     transition: transform 100ms, box-shadow 100ms, background 100ms
     +scribble

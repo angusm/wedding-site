@@ -1,0 +1,7 @@
+@mixin bp-gt($w)
+  @media (min-width: $w)
+    @content
+
+=md
+  @include bp-gt(1024px)
+    @content

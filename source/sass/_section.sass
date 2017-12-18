@@ -9,31 +9,36 @@ main
   display: flex
   flex-direction: column
   justify-content: center
-  height: calc(100% - #{($header-container-padding * 3) + ($section-padding * 2)})
+  margin-bottom: 100px
   margin-top: -$header-container-padding * 3
-  min-height: calc(100% - #{($header-container-padding * 3) + ($section-padding * 2)})
   padding: #{$header-container-padding * 3 + $section-padding} $section-padding $section-padding
   position: relative
   +fadeUpIn
 
 .section__header
-  font-size: 50px
-  letter-spacing: 12px
+  +font-size-l
+  +letter-spacing(12px)
+  opacity: 0.25
   text-align: center
   text-transform: uppercase
 
 .section__content
   text-align: center
 
+  &__super-header
+    +font-size-l
+    +letter-spacing(6px)
+    +serif
+
   &__header
-    font-size: 26px
-    letter-spacing: 6px
+    +font-size-w-bp(26px)
+    +letter-spacing(6px)
     text-transform: lowercase
     +serif
 
   &__body
-    font-size: 18px
-    letter-spacing: 1px
+    +font-size-w-bp(18px)
+    +letter-spacing(1px)
 
 .section__background
   bottom: $section-padding
