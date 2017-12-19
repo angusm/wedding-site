@@ -8,4 +8,7 @@ content:
     body: <p>Half-past Five
   - header: Dinner
     body: <p>Six O'Clock
-
+  - header: Dance
+    body: >
+      <p>Following supper
+      <p>Open Bar - leave your cash at home
