@@ -32,7 +32,9 @@
                class="section section--{{section.html_id}}">
         <div class="section__background"></div>
         {% if section.header %}
+        {% if section.header_url %}<a href="{{section.header_url}}">{% endif %}
         <h1 class="section__header">{{section.header}}</h1>
+        {% if section.header_url %}</a>{% endif %}
         {% endif %}
         {% if section.content %}
         {% for content in section.content %}
