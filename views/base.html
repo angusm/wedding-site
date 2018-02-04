@@ -45,7 +45,7 @@
           </h2>
           {% endif %}
           {% if content.header %}
-          {% if content.header_url %}<a href="{{content.header_url}}">{% endif %}
+          {% if content.header_url %}<a target="_blank" href="{{content.header_url}}">{% endif %}
           <h3 class="section__content__header">{{content.header|safe}}</h3>
           {% if content.header_url %}</a>{% endif %}
           {% endif %}
