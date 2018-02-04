@@ -1,10 +1,9 @@
 html_id: rsvp
 header: RSVP
 content:
-  - header: <a href="mailto:rsvp@maczoski.com">RSVP</a>
+  - header: '<a href="https://www.surveymonkey.com/r/6XR9NYH">RSVP</a>'
     body:
   - body: >
-      <p>Please RSVP to <a href="mailto:rsvp@maczoski.com">rsvp@maczoski.com</a>
-      <p>By July 15th, 2018
-      <p>With the names of those attending
+      <p>Please RSVP using the link above by July 10th, 2018 with the names of those attending.
       <p>If you will be camping, please let us know whether you'll be in a tent or trailer.
+      <p>For any other questions please e-mail <a href="mailto:rsvp@maczoski.com">rsvp@mackzoski.com</a>

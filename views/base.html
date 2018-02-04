@@ -45,7 +45,9 @@
           </h2>
           {% endif %}
           {% if content.header %}
+          {% if content.header_url %}<a href="{{content.header_url}}">{% endif %}
           <h3 class="section__content__header">{{content.header|safe}}</h3>
+          {% if content.header_url %}</a>{% endif %}
           {% endif %}
           {% if content.body %}
           <div class="section__content__body">{{content.body|safe}}</div>

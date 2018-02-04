@@ -3,9 +3,7 @@ header: When
 content:
   - super_header: August <span class="olde">25<span class="superscript">th</span></span> 2018
   - header: Ceremony
-    body: <p>Half-past Two
-  - header: Cocktails
-    body: <p>Half-past Five
+    body: <p>Three O'Clock
   - header: Dinner
     body: <p>Six O'Clock
   - header: Dance
